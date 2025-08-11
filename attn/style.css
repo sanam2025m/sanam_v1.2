@@ -1,0 +1,176 @@
+ body {
+    background: linear-gradient(to bottom, #f4f1ee, #eae4dc);
+    font-family: 'Tajawal', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    direction: rtl;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 550px;
+    box-sizing: border-box;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .header img {
+    max-height: 100px;
+    margin: 0 10px 10px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #7a5b4f;
+    border-bottom: 2px solid #EBE3DB;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #3A2D28;
+    margin-bottom: 8px;
+  }
+
+  input, select {
+    padding: 14px 16px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: 1px solid #D1C7BD;
+    background-color: #F1EDE6;
+    transition: 0.3s;
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  input:focus, select:focus {
+    outline: none;
+    border-color: #AA8374;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(203, 173, 141, 0.2);
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .btn-checkin, .btn-checkout {
+    flex: 1;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  .btn-checkin {
+    background-color: #3A2D28;
+    color: #fff;
+  }
+
+  .btn-checkin:hover {
+    background-color: #948979;
+  }
+
+  .btn-checkout {
+    background-color: #D1C7BD;
+    color: #fff;
+  }
+
+  .btn-checkout:hover {
+    background-color: #E0D6C8;
+  }
+
+  .status {
+    margin-top: 20px;
+    padding: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .form-row {
+      flex-direction: column;
+    }
+    .btns {
+      flex-direction: column;
+    }
+  }
+
+  
+/* ✅ نافذة التذكير */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px 20px;
+  border: 2px solid #3A2D28;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 16px;
+  text-align: center;
+  font-family: 'Tajawal', sans-serif;
+  color: #3A2D28;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.close-btn {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #000;
+}

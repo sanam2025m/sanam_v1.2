@@ -17,11 +17,12 @@ function haversine(lat1, lon1, lat2, lon2) {
 
 const locations = {
   "المركز 1": { lat: 21.381115689864014, lon: 39.87005086015681, radius: 50 },
-  "المركز 4": { lat: 21.38225681715707, lon: 39.871412515975955, radius: 50 },
+  "المركز 4": { lat: 21.383055291801348, lon: 39.871809482514266, radius: 50 },
   "Amany": { lat: 21.353332012296036, lon: 39.83317700978527, radius: 100 },
   "مكتب أ. محمد": { lat: 21.358667827435426, lon: 39.91056507116383, radius: 50 },
   "أ.أحمد": { lat: 21.484817101900646, lon: 39.25697692973232, radius: 100 }
 };
+
 
 async function isUserInRange() {
   const selected = document.getElementById("location").value;

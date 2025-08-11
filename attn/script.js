@@ -16,8 +16,8 @@ function haversine(lat1, lon1, lat2, lon2) {
 }
 
 const locations = {
-  "naseem1": { lat: 21.381115689864014, lon: 39.87005086015681, radius: 50 },
-  "naseem4": { lat: 21.383055291801348, lon: 39.871809482514266, radius: 50 },
+  "naseem1": { lat: 21.381115689864014, lon: 39.87005086015681, radius: 100 },
+  "naseem4": { lat: 21.383055291801348, lon: 39.871809482514266, radius: 100 },
   "amany": { lat: 21.353332012296036, lon: 39.83317700978527, radius: 100 },
   "mohammed": { lat: 21.358667827435426, lon: 39.91056507116383, radius: 50 },
   "ahmad": { lat: 21.547709791439225, lon: 39.14679219068816, radius: 100 }
